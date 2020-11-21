@@ -1,2 +1,9 @@
 # PeperNote
-PeperNote is an MIT licensed open source desktop stickynote replacement
+PeperNote is an MIT licensed open source desktop stickynote replacement.
+
+I chose the name "PeperNote" because it sounds like the dutch word for a type of small gingerbread cookie.
+
+## Technical details
+- The installation prerequisite is .NET 4.7.2
+- The notes you create will be stored in **%localappdata%\PeperNote** , which typically expands to **c:\users\username\AppData\Local\PeperNote**
+- To build the project and installer you need Visual Studio 2019 with "Microsoft Visual Studio Installer Projects" extension installed.
