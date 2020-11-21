@@ -1,0 +1,25 @@
+﻿<Window x:Class="PeperNote.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PeperNote"
+        mc:Ignorable="d"
+        Title="PeperNote Settings" Height="128.899" Width="267.185" ResizeMode="CanResizeWithGrip">
+    <Grid Margin="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Run on startup:" Margin="8" Grid.ColumnSpan="1" VerticalContentAlignment="Center" />
+        <CheckBox x:Name="checkBoxAutoRun" Margin="8" Grid.Column="1" VerticalContentAlignment="Center"/>
+        <WrapPanel Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button IsDefault="True" Name="btnDialogOk" MinWidth="60" Margin="0,0,10,0" Click="btnDialogOk_Click">_Ok</Button>
+            <Button IsCancel="True" MinWidth="60">_Cancel</Button>
+        </WrapPanel>
+    </Grid>
+</Window>
