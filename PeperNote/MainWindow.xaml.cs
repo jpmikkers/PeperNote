@@ -58,7 +58,7 @@ namespace PeperNote
             {
                 new System.Windows.Forms.MenuItem("New note",new EventHandler((o,a) => CreateNewNote())),
                 new System.Windows.Forms.MenuItem("Bring notes to front",new EventHandler((o,a) => BringNotesToFront())),
-                new System.Windows.Forms.MenuItem("Settings",new EventHandler((o,a) => ShowSettings())),
+                // new System.Windows.Forms.MenuItem("Settings",new EventHandler((o,a) => ShowSettings())),
                 new System.Windows.Forms.MenuItem("-"),
                 new System.Windows.Forms.MenuItem("Exit",new EventHandler((o,a) => CloseAction())),
             }); ;
