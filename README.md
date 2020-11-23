@@ -1,7 +1,7 @@
 # PeperNote
 PeperNote is an MIT licensed open source desktop stickynote replacement.
 
-I chose the name "PeperNote" because it sounds like the dutch word for a type of small gingerbread cookie.
+I chose the name "PeperNote" because it sounds like the dutch word for a type of small gingerbread [cookie](https://en.wikipedia.org/wiki/Kruidnoten#/media/File:Stapeltje_kruidnoten.jpg).
 
 ## Technical details
 - The installation prerequisite is .NET 4.7.2
