@@ -43,7 +43,16 @@ namespace PeperNoteWixSharp
             project.ControlPanelInfo.UrlUpdateInfo = @"https://github.com/jpmikkers/pepernote";
             project.ControlPanelInfo.HelpLink = @"https://github.com/jpmikkers/pepernote";
             project.Description = @"PeperNote is an open source sticky note desktop application";
-            project.Version = new Version(1, 0);
+
+            // take version from PeperNote.exe itself instead of setting project.Version
+            project.SetVersionFromFile(@"..\PeperNote\bin\release\PeperNote.exe");
+
+            // make sure existing (older) products are removed
+            project.MajorUpgrade = new MajorUpgrade
+            {
+                Schedule = UpgradeSchedule.afterInstallInitialize,
+                DowngradeErrorMessage = "A later version of [ProductName] is already installed. Setup will now exit."
+            };
 
             //project.Properties
             //project.ManagedUI = new ManagedUI();
