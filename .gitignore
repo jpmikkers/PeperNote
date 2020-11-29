@@ -360,3 +360,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# wix and wixsharp stuff
+*.wxs
+*.msi
