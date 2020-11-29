@@ -25,68 +25,68 @@
     </WindowChrome.WindowChrome>
     <DockPanel Margin="5,5,5,5">
         <DockPanel x:Name="dockPanelTool"  DockPanel.Dock="Top" Height="24" Margin="0,0,0,0" Background="#20000000" LastChildFill="False">
-<!--            
+            <!--            
             <Button x:Name="newButton" Width="24" Height="24" Margin="0,0,0,0" DockPanel.Dock="Left" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/New_16x.png" Stretch="None"/>
                 </StackPanel>
             </Button>
--->            
+-->
             <ToggleButton x:Name="buttonAlwaysVisible" ToolTip="Always on top" Width="24" Height="24" Margin="0,0,0,0" VerticalAlignment="Top" DockPanel.Dock="Left" HorizontalAlignment="Left" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/PinnedItem_16x.png" Stretch="None"/>
                 </StackPanel>
             </ToggleButton>
-            <Button x:Name="colorButton" Width="15" Height="15" Margin="0,0,0,0" Click="buttonNoteColor_Click" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderBrush="Black">
+            <Button x:Name="colorButton" ToolTip="Note color" Width="15" Height="16" Margin="0,4" Click="buttonNoteColor_Click" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderBrush="Black">
             </Button>
-            <Button x:Name="buttonClose" Width="24" Height="24" Margin="0,0,0,0" VerticalAlignment="Top" Click="buttonClose_Click" DockPanel.Dock="Right" HorizontalAlignment="Left" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+            <Button x:Name="buttonClose" ToolTip="Delete note" Width="24" Height="24" Margin="0,0,0,0" VerticalAlignment="Top" Click="buttonClose_Click" DockPanel.Dock="Right" HorizontalAlignment="Left" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/Close_16x.png" Stretch="None"/>
                 </StackPanel>
             </Button>
         </DockPanel>
         <StackPanel x:Name="stackPanelTool" DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Left">
-            <Button Height="24" Margin="1,4,0,0" Click="ButtonLargerFont_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" >
+            <Button ToolTip="Larger font" Height="24" Margin="1,4,0,0" Click="ButtonLargerFont_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" >
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/IncreaseFontSize_16x.png" Stretch="None"/>
                 </StackPanel>
             </Button>
-            <Button Height="24" Margin="1,4,0,0" Click="ButtonSmallerFont_Click"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+            <Button ToolTip="Smaller font" Height="24" Margin="1,4,0,0" Click="ButtonSmallerFont_Click"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/DecreaseFontSize_16x.png" Stretch="None"/>
                 </StackPanel>
             </Button>
-            <ToggleButton x:Name="buttonBold" Height="24" Margin="1,4,0,0" Click="buttonBold_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+            <ToggleButton x:Name="buttonBold" ToolTip="Bold" Height="24" Margin="1,4,0,0" Click="buttonBold_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/Bold_16x.png" Stretch="None"/>
                 </StackPanel>
             </ToggleButton>
-            <ToggleButton x:Name="buttonItalic" Height="24" Margin="1,4,0,0" Click="buttonItalic_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+            <ToggleButton x:Name="buttonItalic" ToolTip="Italic" Height="24" Margin="1,4,0,0" Click="buttonItalic_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/Italic_16x.png" Stretch="None"/>
                 </StackPanel>
             </ToggleButton>
-            <ToggleButton x:Name="buttonUnderline" Height="24" Margin="1,4,0,0" Click="buttonUnderline_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+            <ToggleButton x:Name="buttonUnderline" ToolTip="Underline" Height="24" Margin="1,4,0,0" Click="buttonUnderline_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/Underline_16x.png" Stretch="None"/>
                 </StackPanel>
             </ToggleButton>
-            <ToggleButton x:Name="buttonStrikeThrough" Height="24" Margin="1,4,0,0" Click="buttonStrikeThrough_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+            <ToggleButton x:Name="buttonStrikeThrough" ToolTip="Strikethrough" Height="24" Margin="1,4,0,0" Click="buttonStrikeThrough_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/StrikeThrough_16x.png" Stretch="None"/>
                 </StackPanel>
             </ToggleButton>
-            <ToggleButton x:Name="buttonL" Height="24" Margin="1,4,0,0" Click="buttonAlignLeft_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+            <ToggleButton x:Name="buttonL" ToolTip="Align text to the left" Height="24" Margin="1,4,0,0" Click="buttonAlignLeft_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/AlignLeft_16x.png" Stretch="None"/>
                 </StackPanel>
             </ToggleButton>
-            <ToggleButton x:Name="buttonC" Height="24" Margin="1,4,0,0" Click="buttonAlignCenter_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+            <ToggleButton x:Name="buttonC" ToolTip="Center text" Height="24" Margin="1,4,0,0" Click="buttonAlignCenter_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/AlignCenter_16x.png" Stretch="None"/>
                 </StackPanel>
             </ToggleButton>
-            <ToggleButton x:Name="buttonR" Height="24" Margin="1,4,0,0" Click="buttonAlignRight_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+            <ToggleButton x:Name="buttonR" ToolTip="Align text to the right" Height="24" Margin="1,4,0,0" Click="buttonAlignRight_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Resources/AlignRight_16x.png" Stretch="None"/>
                 </StackPanel>
