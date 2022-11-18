@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30611.23
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeperNote", "PeperNote\PeperNote.csproj", "{E2A702B1-E765-49E3-9C0D-98F3D74ECB7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeperNote", "PeperNote\PeperNote.csproj", "{E2A702B1-E765-49E3-9C0D-98F3D74ECB7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeperNoteWixSharp", "PeperNoteWixSharp\PeperNoteWixSharp.csproj", "{44555887-C439-470C-944D-8866EC3D7067}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeperNoteWixSharp", "PeperNoteWixSharp\PeperNoteWixSharp.csproj", "{44555887-C439-470C-944D-8866EC3D7067}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
