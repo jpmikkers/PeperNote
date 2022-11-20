@@ -458,5 +458,10 @@ namespace PeperNote
             {
             }
         }
+
+        private void buttonNewNote_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

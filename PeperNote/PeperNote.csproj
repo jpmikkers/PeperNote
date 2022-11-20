@@ -39,6 +39,20 @@
     <ApplicationIcon>MainIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Resources\Add_grey_16x.svg" />
+    <None Remove="Resources\AlignCenter_16x.svg" />
+    <None Remove="Resources\AlignLeft_16x.svg" />
+    <None Remove="Resources\AlignRight_16x.svg" />
+    <None Remove="Resources\Bold_16x.svg" />
+    <None Remove="Resources\Close_16x.svg" />
+    <None Remove="Resources\DecreaseFontSize_16x.svg" />
+    <None Remove="Resources\IncreaseFontSize_16x.svg" />
+    <None Remove="Resources\Italic_16x.svg" />
+    <None Remove="Resources\PinnedItem_16x.svg" />
+    <None Remove="Resources\StrikeThrough_16x.svg" />
+    <None Remove="Resources\Underline_16x.svg" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -47,25 +61,29 @@
     <None Include="License.rtf" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Add_grey_16x.svg" />
+    <Resource Include="Resources\AlignCenter_16x.svg" />
+    <Resource Include="Resources\AlignLeft_16x.svg" />
+    <Resource Include="Resources\AlignRight_16x.svg" />
+    <Resource Include="Resources\Bold_16x.svg" />
+    <Resource Include="Resources\Close_16x.svg" />
+    <Resource Include="Resources\DecreaseFontSize_16x.svg" />
+    <Resource Include="Resources\IncreaseFontSize_16x.svg" />
+    <Resource Include="Resources\Italic_16x.svg" />
+    <Resource Include="Resources\PinnedItem_16x.svg" />
+    <Resource Include="Resources\StrikeThrough_16x.svg" />
     <Resource Include="Resources\TrayIcon.ico" />
-    <Resource Include="Resources\Close_16x.png" />
     <Resource Include="Resources\AlwaysVisible_16x.png" />
-    <Resource Include="Resources\PinnedItem_16x.png" />
-    <Resource Include="Resources\AlignCenter_16x.png" />
-    <Resource Include="Resources\AlignLeft_16x.png" />
-    <Resource Include="Resources\AlignRight_16x.png" />
-    <Resource Include="Resources\Bold_16x.png" />
-    <Resource Include="Resources\DecreaseFontSize_16x.png" />
-    <Resource Include="Resources\IncreaseFontSize_16x.png" />
-    <Resource Include="Resources\Italic_16x.png" />
-    <Resource Include="Resources\StrikeThrough_16x.png" />
-    <Resource Include="Resources\Underline_16x.png" />
     <Resource Include="Resources\NewNote_16x.png" />
     <Resource Include="MainIcon.ico" />
+    <Resource Include="Resources\Underline_16x.svg" />
   </ItemGroup>
   <ItemGroup>
 	  <None Include="UninstallIcon.ico">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SharpVectors.Wpf" Version="1.8.1" />
   </ItemGroup>
 </Project>

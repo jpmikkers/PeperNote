@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
         xmlns:local="clr-namespace:PeperNote"
         xmlns:properties="clr-namespace:PeperNote.Properties"
         mc:Ignorable="d"
@@ -23,7 +24,7 @@
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0" ResizeBorderThickness="8" UseAeroCaptionButtons="False"/>
     </WindowChrome.WindowChrome>
-    <DockPanel Margin="5,5,5,5">
+    <DockPanel Margin="4,4,4,4">
         <DockPanel x:Name="dockPanelTool"  DockPanel.Dock="Top" Height="24" Margin="0,0,0,0" Background="#20000000" LastChildFill="False">
             <!--            
             <Button x:Name="newButton" Width="24" Height="24" Margin="0,0,0,0" DockPanel.Dock="Left" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
@@ -31,65 +32,48 @@
                     <Image Source="Resources/New_16x.png" Stretch="None"/>
                 </StackPanel>
             </Button>
--->
-            <ToggleButton x:Name="buttonAlwaysVisible" ToolTip="Always on top" Width="24" Height="24" Margin="0,0,0,0" VerticalAlignment="Top" DockPanel.Dock="Left" HorizontalAlignment="Left" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
+            <Button x:Name="buttonNewNote" ToolTip="New note" Width="24" Height="24" Margin="0,0,0,0" VerticalAlignment="Top" Click="buttonNewNote_Click" DockPanel.Dock="Left" HorizontalAlignment="Left" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="Resources/PinnedItem_16x.png" Stretch="None"/>
+                    <Image Source="{svgc:SvgImage Source=/Resources/Add_grey_16x.svg, AppName=PeperNote}" Stretch="None"/>
                 </StackPanel>
-            </ToggleButton>
-            <Button x:Name="colorButton" ToolTip="Note color" Width="15" Height="16" Margin="0,4" Click="buttonNoteColor_Click" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderBrush="Black">
             </Button>
-            <Button x:Name="buttonClose" ToolTip="Delete note" Width="24" Height="24" Margin="0,0,0,0" VerticalAlignment="Top" Click="buttonClose_Click" DockPanel.Dock="Right" HorizontalAlignment="Left" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Resources/Close_16x.png" Stretch="None"/>
-                </StackPanel>
+            -->
+            <ToggleButton x:Name="buttonAlwaysVisible" ToolTip="Always on top" Width="24" Margin="0,0,0,0" VerticalAlignment="Top" DockPanel.Dock="Left" HorizontalAlignment="Left" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
+                <Image Source="{svgc:SvgImage Source=/Resources/PinnedItem_16x.svg, AppName=PeperNote}" Stretch="Fill"/>
+            </ToggleButton>
+            <Button x:Name="colorButton" ToolTip="Note color" Width="15" Height="15" Margin="0,0,0,0" VerticalAlignment="Stretch" Click="buttonNoteColor_Click" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" BorderBrush="Black">
+            </Button>
+            <Button x:Name="buttonClose" ToolTip="Delete note" Width="24" Margin="0,0,0,0" VerticalAlignment="Top" Click="buttonClose_Click" DockPanel.Dock="Right" HorizontalAlignment="Left" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <Image Source="{svgc:SvgImage Source=/Resources/Close_16x.svg, AppName=PeperNote}" Stretch="Fill"/>
             </Button>
         </DockPanel>
         <StackPanel x:Name="stackPanelTool" DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Left">
-            <Button ToolTip="Larger font" Height="24" Margin="1,4,0,0" Click="ButtonLargerFont_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" >
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Resources/IncreaseFontSize_16x.png" Stretch="None"/>
-                </StackPanel>
+            <Button ToolTip="Larger font" Height="24" Margin="0,0,0,0" Click="ButtonLargerFont_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" >
+                <Image Source="{svgc:SvgImage Source=/Resources/IncreaseFontSize_16x.svg, AppName=PeperNote}" Stretch="Fill"/>
             </Button>
-            <Button ToolTip="Smaller font" Height="24" Margin="1,4,0,0" Click="ButtonSmallerFont_Click"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Resources/DecreaseFontSize_16x.png" Stretch="None"/>
-                </StackPanel>
+            <Button ToolTip="Smaller font" Height="24" Margin="0,0,0,0" Click="ButtonSmallerFont_Click"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <Image Source="{svgc:SvgImage Source=/Resources/DecreaseFontSize_16x.svg, AppName=PeperNote}" Stretch="Fill"/>
             </Button>
-            <ToggleButton x:Name="buttonBold" ToolTip="Bold" Height="24" Margin="1,4,0,0" Click="buttonBold_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Resources/Bold_16x.png" Stretch="None"/>
-                </StackPanel>
+            <ToggleButton x:Name="buttonBold" ToolTip="Bold" Height="24" Margin="0,0,0,0" Click="buttonBold_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+                <Image Source="{svgc:SvgImage Source=/Resources/Bold_16x.svg, AppName=PeperNote}" Stretch="Fill"/>
             </ToggleButton>
-            <ToggleButton x:Name="buttonItalic" ToolTip="Italic" Height="24" Margin="1,4,0,0" Click="buttonItalic_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Resources/Italic_16x.png" Stretch="None"/>
-                </StackPanel>
+            <ToggleButton x:Name="buttonItalic" ToolTip="Italic" Height="24" Margin="0,0,0,0" Click="buttonItalic_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+                <Image Source="{svgc:SvgImage Source=/Resources/Italic_16x.svg, AppName=PeperNote}" Stretch="Fill"/>
             </ToggleButton>
-            <ToggleButton x:Name="buttonUnderline" ToolTip="Underline" Height="24" Margin="1,4,0,0" Click="buttonUnderline_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Resources/Underline_16x.png" Stretch="None"/>
-                </StackPanel>
+            <ToggleButton x:Name="buttonUnderline" ToolTip="Underline" Height="24" Margin="0,0,0,0" Click="buttonUnderline_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+                <Image Source="{svgc:SvgImage Source=/Resources/Underline_16x.svg, AppName=PeperNote}" Stretch="Fill"/>
             </ToggleButton>
-            <ToggleButton x:Name="buttonStrikeThrough" ToolTip="Strikethrough" Height="24" Margin="1,4,0,0" Click="buttonStrikeThrough_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Resources/StrikeThrough_16x.png" Stretch="None"/>
-                </StackPanel>
+            <ToggleButton x:Name="buttonStrikeThrough" ToolTip="Strikethrough" Height="24" Margin="0,0,0,0" Click="buttonStrikeThrough_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+                <Image Source="{svgc:SvgImage Source=/Resources/StrikeThrough_16x.svg, AppName=PeperNote}" Stretch="Fill"/>
             </ToggleButton>
-            <ToggleButton x:Name="buttonL" ToolTip="Align text to the left" Height="24" Margin="1,4,0,0" Click="buttonAlignLeft_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Resources/AlignLeft_16x.png" Stretch="None"/>
-                </StackPanel>
+            <ToggleButton x:Name="buttonL" ToolTip="Align text to the left" Height="24" Margin="0,0,0,0" Click="buttonAlignLeft_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+                <Image Source="{svgc:SvgImage Source=/Resources/AlignLeft_16x.svg, AppName=PeperNote}" Stretch="Fill"/>
             </ToggleButton>
-            <ToggleButton x:Name="buttonC" ToolTip="Center text" Height="24" Margin="1,4,0,0" Click="buttonAlignCenter_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Resources/AlignCenter_16x.png" Stretch="None"/>
-                </StackPanel>
+            <ToggleButton x:Name="buttonC" ToolTip="Center text" Height="24" Margin="0,0,0,0" Click="buttonAlignCenter_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+                <Image Source="{svgc:SvgImage Source=/Resources/AlignCenter_16x.svg, AppName=PeperNote}" Stretch="Fill"/>
             </ToggleButton>
-            <ToggleButton x:Name="buttonR" ToolTip="Align text to the right" Height="24" Margin="1,4,0,0" Click="buttonAlignRight_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Resources/AlignRight_16x.png" Stretch="None"/>
-                </StackPanel>
+            <ToggleButton x:Name="buttonR" ToolTip="Align text to the right" Height="24" Margin="0,0,0,0" Click="buttonAlignRight_Click" Style="{StaticResource {x:Static ToolBar.ToggleButtonStyleKey}}">
+                <Image Source="{svgc:SvgImage Source=/Resources/AlignRight_16x.svg, AppName=PeperNote}" Stretch="Fill"/>
             </ToggleButton>
         </StackPanel>
         <RichTextBox x:Name="richTextBox" FontSize="20" Background="{x:Null}" BorderBrush="Yellow" BorderThickness="0" 
