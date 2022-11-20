@@ -54,15 +54,14 @@ namespace PeperNote
             //Stream iconStream = Application.GetResourceStream(new Uri("pack://application:,,,/YourReferencedAssembly;component/YourPossibleSubFolder/YourResourceFile.ico")).Stream;
             notifyIcon.Icon = Properties.Resources.TrayIcon;
             notifyIcon.Visible = true;
-            notifyIcon.ContextMenu = new System.Windows.Forms.ContextMenu(new System.Windows.Forms.MenuItem[]
-            {
-                new System.Windows.Forms.MenuItem("New note",new EventHandler((o,a) => CreateNewNote())),
-                new System.Windows.Forms.MenuItem("Bring notes to front",new EventHandler((o,a) => BringNotesToFront())),
-                // new System.Windows.Forms.MenuItem("Settings",new EventHandler((o,a) => ShowSettings())),
-                new System.Windows.Forms.MenuItem("-"),
-                new System.Windows.Forms.MenuItem("Exit",new EventHandler((o,a) => CloseAction())),
-            }); ;
-
+            notifyIcon.ContextMenuStrip = new System.Windows.Forms.ContextMenuStrip();
+            notifyIcon.ContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+                new System.Windows.Forms.ToolStripMenuItem("New note",null,new EventHandler((o,a) => CreateNewNote())),
+                new System.Windows.Forms.ToolStripMenuItem("Bring notes to front",null,new EventHandler((o,a) => BringNotesToFront())),
+             // new System.Windows.Forms.MenuItem("Settings",new EventHandler((o,a) => ShowSettings())),
+                new System.Windows.Forms.ToolStripSeparator(),
+                new System.Windows.Forms.ToolStripMenuItem("Exit",null,new EventHandler((o,a) => CloseAction())),
+            });
             this.Dispatcher.BeginInvoke(new Action(LoadNotes), DispatcherPriority.Background);
         }
 
