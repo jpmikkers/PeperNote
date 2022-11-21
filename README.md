@@ -5,7 +5,7 @@ I chose the name "PeperNote" because it sounds like the dutch word for a type of
 
 ## Screenshot
 
-![sticky note in edit state](https://github.com/jpmikkers/PeperNote/blob/main/Screenshots/pepernote_mouseover.png)
+![sticky note in edit state](https://github.com/jpmikkers/PeperNote/blob/main/Screenshots/pepernote_v1_1_0.png)
 
 ## How to install
 
@@ -16,9 +16,8 @@ I chose the name "PeperNote" because it sounds like the dutch word for a type of
 
 ## Technical details
 
-- The installation prerequisite is .NET 4.7.2
+- The installation prerequisite is .NET 6
 - The UI uses the WPF library (Windows Presentation Framework). 
 - The notes you create will be stored in **%localappdata%\PeperNote** , which typically expands to **c:\users\username\AppData\Local\PeperNote**
-- To build the project and installer you need Visual Studio 2019
-- The installer project uses [WixSharp](https://github.com/oleg-shilo/wixsharp), the excellent code-first Wix-wrapper created by Oleg Shilo.
-- As this was my first WixSharp attempt, the installer is rather simple now: it will install PeperNote for all users.
+- To build the project and installer you need Visual Studio 2022
+- Required visual studio extension: Microsoft Visual Studio Installer Projects 2022 v2.0.0
