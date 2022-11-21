@@ -75,16 +75,17 @@
             </ToggleButton>
             <Button
                 x:Name="colorButton"
-                Width="15"
-                Height="15"
+                Width="24"
                 Margin="0,0,0,0"
-                VerticalAlignment="Stretch"
+                VerticalAlignment="Top"
+                BorderThickness="0"
                 HorizontalContentAlignment="Center"
                 VerticalContentAlignment="Center"
-                BorderBrush="Black"
                 Click="buttonNoteColor_Click"
                 Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
-                ToolTip="Note color" />
+                ToolTip="Note color">
+                <Image Source="{svgc:SvgImage Source=/Resources/ColorPalette_16x.svg, AppName=PeperNote}" Stretch="Uniform" />
+            </Button>
             <Button
                 x:Name="buttonClose"
                 Width="24"

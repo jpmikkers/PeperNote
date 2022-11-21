@@ -45,6 +45,7 @@
     <None Remove="Resources\AlignRight_16x.svg" />
     <None Remove="Resources\Bold_16x.svg" />
     <None Remove="Resources\Close_16x.svg" />
+    <None Remove="Resources\ColorPalette_16x.svg" />
     <None Remove="Resources\DecreaseFontSize_16x.svg" />
     <None Remove="Resources\IncreaseFontSize_16x.svg" />
     <None Remove="Resources\Italic_16x.svg" />
@@ -67,6 +68,7 @@
     <Resource Include="Resources\AlignRight_16x.svg" />
     <Resource Include="Resources\Bold_16x.svg" />
     <Resource Include="Resources\Close_16x.svg" />
+    <Resource Include="Resources\ColorPalette_16x.svg" />
     <Resource Include="Resources\DecreaseFontSize_16x.svg" />
     <Resource Include="Resources\IncreaseFontSize_16x.svg" />
     <Resource Include="Resources\Italic_16x.svg" />
