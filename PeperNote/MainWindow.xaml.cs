@@ -59,6 +59,7 @@ namespace PeperNote
                 new System.Windows.Forms.ToolStripMenuItem("New note",null,new EventHandler((o,a) => CreateNewNote())),
                 new System.Windows.Forms.ToolStripMenuItem("Bring notes to front",null,new EventHandler((o,a) => BringNotesToFront())),
              // new System.Windows.Forms.MenuItem("Settings",new EventHandler((o,a) => ShowSettings())),
+                new System.Windows.Forms.ToolStripMenuItem("About PeperNote",null,new EventHandler((o,a) => ShowAbout())),
                 new System.Windows.Forms.ToolStripSeparator(),
                 new System.Windows.Forms.ToolStripMenuItem("Exit",null,new EventHandler((o,a) => CloseAction())),
             });
@@ -102,6 +103,13 @@ namespace PeperNote
         private void ShowSettings()
         {
             var sw = new SettingsWindow();
+            sw.Owner = this;
+            sw.ShowDialog();
+        }
+
+        private void ShowAbout()
+        {
+            var sw = new AboutWindow();
             sw.Owner = this;
             sw.ShowDialog();
         }

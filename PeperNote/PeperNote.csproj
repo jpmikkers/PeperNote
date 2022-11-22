@@ -39,6 +39,7 @@
     <ApplicationIcon>MainIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="About.rtf" />
     <None Remove="Resources\Add_grey_16x.svg" />
     <None Remove="Resources\AlignCenter_16x.svg" />
     <None Remove="Resources\AlignLeft_16x.svg" />
@@ -62,6 +63,7 @@
     <None Include="License.rtf" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\About.rtf" />
     <Resource Include="Resources\Add_grey_16x.svg" />
     <Resource Include="Resources\AlignCenter_16x.svg" />
     <Resource Include="Resources\AlignLeft_16x.svg" />
