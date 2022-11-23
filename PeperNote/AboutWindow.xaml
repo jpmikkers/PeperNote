@@ -11,7 +11,7 @@
     ResizeMode="CanResizeWithGrip"
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
-    <Grid Margin="5,5,5,10">
+    <Grid Margin="8,8,8,12">
         <Grid.Resources>
             <!--  Default settings for controls  -->
             <Style TargetType="{x:Type Button}">
