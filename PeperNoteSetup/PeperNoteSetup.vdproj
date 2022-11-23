@@ -76,6 +76,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -127,7 +135,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_6EDCBF63C8EE4874801D2BA5A4CCE8A9"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -176,7 +184,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PeperNote"
         "ProductCode" = "8:{7A24B736-7905-434C-948F-3A6E8CE66A82}"
-        "PackageCode" = "8:{6C20CE82-D5F2-421C-B1F1-E7E115E0EC9D}"
+        "PackageCode" = "8:{94D7408A-8A81-45AA-8660-9E1471D48077}"
         "UpgradeCode" = "8:{7A24B736-7905-434C-948F-3A6E7CE65A81}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -190,14 +198,14 @@
         "Title" = "8:PeperNote"
         "Subject" = "8:"
         "ARPCONTACT" = "8:JPMikkers"
-        "Keywords" = "8:sticky notes stickies pepernote"
+        "Keywords" = "8:sticky;notes;stickies;desktop;pepernote"
         "ARPCOMMENTS" = "8:PeperNote is an open source sticky note desktop application"
         "ARPURLINFOABOUT" = "8:https://github.com/jpmikkers/pepernote"
         "ARPPRODUCTICON" = "8:_0B861E435FCD461DBC959A42A3934136"
         "ARPIconIndex" = "3:32512"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -739,7 +747,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0B861E435FCD461DBC959A42A3934136"
             {
-            "SourcePath" = "8:..\\PeperNote\\obj\\Debug\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\PeperNote\\obj\\Release\\net6.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_6EDCBF63C8EE4874801D2BA5A4CCE8A9"
