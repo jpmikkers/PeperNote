@@ -78,10 +78,10 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.DesktopRuntime.9.0.x64"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    "Name" = "8:.NET Desktop Runtime 9.0.0 (x64)"
+                    "ProductCode" = "8:Microsoft.NetCore.DesktopRuntime.9.0.x64"
                     }
                 }
             }
@@ -183,15 +183,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PeperNote"
-        "ProductCode" = "8:{7A24B736-7905-434C-948F-3A6E8CE66A82}"
-        "PackageCode" = "8:{94D7408A-8A81-45AA-8660-9E1471D48077}"
+        "ProductCode" = "8:{CC5A7893-4F00-4943-9730-DE991933D404}"
+        "PackageCode" = "8:{E97AF91F-23ED-41AC-AA09-4291101E6CEF}"
         "UpgradeCode" = "8:{7A24B736-7905-434C-948F-3A6E7CE65A81}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.1.0"
+        "ProductVersion" = "8:1.2.0"
         "Manufacturer" = "8:JPMikkers"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/jpmikkers/pepernote"
@@ -747,7 +747,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0B861E435FCD461DBC959A42A3934136"
             {
-            "SourcePath" = "8:..\\PeperNote\\obj\\Release\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\PeperNote\\obj\\Release\\net9.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_6EDCBF63C8EE4874801D2BA5A4CCE8A9"

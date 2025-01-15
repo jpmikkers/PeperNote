@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<ProjectGuid>{E2A702B1-E765-49E3-9C0D-98F3D74ECB7A}</ProjectGuid>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net6.0-windows</TargetFramework>
+		<TargetFramework>net9.0-windows</TargetFramework>
 		<ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 		<PublishUrl>publish\</PublishUrl>
@@ -20,12 +20,12 @@
 		<BootstrapperEnabled>true</BootstrapperEnabled>
 		<AssemblyTitle>PeperNote</AssemblyTitle>
 		<Product>PeperNote</Product>
-		<Copyright>Copyright © 2022 J.P. Mikkers</Copyright>
-		<ProductVersion>1.1.0.0</ProductVersion>
+		<Copyright>Copyright © 2025 J.P. Mikkers</Copyright>
+		<ProductVersion>1.2.0.0</ProductVersion>
 		<ApplicationRevision>0</ApplicationRevision>
-		<ApplicationVersion>1.1.0.0</ApplicationVersion>
-		<AssemblyVersion>1.1.0.0</AssemblyVersion>
-		<FileVersion>1.1.0.0</FileVersion>
+		<ApplicationVersion>1.2.0.0</ApplicationVersion>
+		<AssemblyVersion>1.2.0.0</AssemblyVersion>
+		<FileVersion>1.2.0.0</FileVersion>
 		<OutputPath>bin\$(Configuration)\</OutputPath>
 		<UseWPF>true</UseWPF>
 		<UseWindowsForms>true</UseWindowsForms>
@@ -89,6 +89,19 @@
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="SharpVectors.Wpf" Version="1.8.1" />
+		<PackageReference Include="SharpVectors.Wpf" Version="1.8.4.2" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Update="Properties\Settings.Designer.cs">
+	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Settings.settings</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Update="Properties\Settings.settings">
+	    <Generator>SettingsSingleFileGenerator</Generator>
+	    <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+	  </None>
 	</ItemGroup>
 </Project>
