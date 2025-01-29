@@ -17,7 +17,7 @@ I chose the name "PeperNote" because it sounds like the dutch word for a type of
 
 ## Technical details
 
-- The installation prerequisite is .NET 9
+- The installation prerequisite is [.NET 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) (to be precise: .NET desktop runtime 9.0.x, x64)
 - The UI uses the WPF library (Windows Presentation Framework). 
 - The notes you create will be stored in **%localappdata%\PeperNote** , which typically expands to **c:\users\username\AppData\Local\PeperNote**
 - To build the project and installer you need Visual Studio 2022
